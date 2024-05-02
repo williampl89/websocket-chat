@@ -1,0 +1,44 @@
+
+###
+POST http://localhost:8080/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "correo": "usernica25@yahoo.es",
+    "password": "1234567"
+}
+
+ 
+###
+GET http://localhost:8080/api/categorias HTTP/1.1
+
+###
+GET http://localhost:8080/api/categorias?limite=2&desde=4 HTTP/1.1
+
+###
+GET http://localhost:8080/api/categorias/6625a3b07713f13ef4b0eaf5 HTTP/1.1
+
+###
+POST http://localhost:8080/api/categorias/ HTTP/1.1
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE0YzI3ZTc4MDExNTY5ZmQwZWVjNTMiLCJpYXQiOjE3MTM4OTA5NzEsImV4cCI6MTcxMzkwNTM3MX0.Az9_ps6YPffJDJ1DU0qknrfl_d9E7dZpd414x2kErB4
+Content-Type: application/json
+
+
+{
+    "nombre": "Ensaladas"
+}
+
+###
+PUT http://localhost:8080/api/categorias/6625025f6681fc19aae2e991 HTTP/1.1
+Content-Type: application/json
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE0YzI3ZTc4MDExNTY5ZmQwZWVjNTMiLCJpYXQiOjE3MTM4NDA4NzMsImV4cCI6MTcxMzg1NTI3M30.5D5T8311r8TnYmDQss6yAWjdz1cYe89qAqgiZrJy_6g
+
+
+{
+    "nombre": "GALLETAS Update"
+}
+
+###
+DELETE http://localhost:8080/api/categorias/6625025f6681fc19aae2e991 HTTP/1.1
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NjE0YzI3ZTc4MDExNTY5ZmQwZWVjNTMiLCJpYXQiOjE3MTM4NDA4NzMsImV4cCI6MTcxMzg1NTI3M30.5D5T8311r8TnYmDQss6yAWjdz1cYe89qAqgiZrJy_6g

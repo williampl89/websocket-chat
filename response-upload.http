@@ -1,0 +1,13 @@
+###
+POST http://localhost:8080/api/uploads HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "William DavilaUser 20",
+    "google": true,
+    "correo": "usernica200@yahoo.es",
+    "password": "1234567",
+    "rol": "ADMIN_ROLE",
+    "img": ":P"
+
+}
